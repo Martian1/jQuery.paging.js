@@ -7,7 +7,7 @@
 ## 使用
 HTML<br>
 \<div id="page">\</div>
-<br>
+<br><br>
 css<br>
 a{
     width: 23px;
@@ -21,7 +21,7 @@ a{
 .current{
     background-color: #5ac3e7;
 }
-<br>
+<br><br>
 js<br>
 $('#page').paging({pageNo:2,totalPage:10,callback:function(cur){<br>
 　　console.log("这是回调函数");<br>
