@@ -1,0 +1,33 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>简单的分页插件</title>
+    <style type="text/css">
+    a{
+        width: 23px;
+        height: 23px;
+        border: 1px solid #dce0e0;
+        text-align: center;
+        margin: 0 4px;
+        cursor: pointer;
+        display: inline-block;
+    }
+    .current{
+        background-color: #5ac3e7;
+    }
+    </style>
+</head>
+<body>
+    <div id="page"></div>
+    <script src="http://luopq.com/demo/lib/jquery-1.10.2.min.js"></script>
+    <script src="../paging.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        $('#page').paging({pageNo:2,totalPage:10,callback:function(cur){
+            console.log(cur);
+        }});
+    });
+    </script>
+</body>
+
+</html> 
