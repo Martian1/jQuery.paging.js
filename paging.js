@@ -80,7 +80,7 @@
             bindEvent:function(){
                 var me=this;
                 me.element.on('click','a',function(){
-                    var num=$(this).html();console.log(num)
+                    var num=$(this).html();
                     if(num=="&lt;"){
                         me.options.pageNo=+me.options.pageNo-1;
                     }else if(num=="&gt;"){
