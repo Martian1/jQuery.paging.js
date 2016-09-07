@@ -9,8 +9,7 @@
             this.options=options=$.extend(initDate,options||{});
             this.init();
         }
-        Paging.prototype={
-            // 将构造函数置为Paging，这里一定要将constructor重新设置回Paging，不然会指向Object的构造函数  
+        Paging.prototype={ 
             constructor:Paging,
             init:function(){
                 this.creatHtml();
